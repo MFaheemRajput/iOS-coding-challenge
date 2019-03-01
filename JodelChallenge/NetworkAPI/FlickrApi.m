@@ -6,8 +6,11 @@
 #import "FlickrApi.h"
 #import <UIKit/UIKit.h>
 #import <FlickrKit/FlickrKit.h>
+#import "JodelChallenge-Swift.h"
 
 @implementation FlickrApi
+
+
 
 + (void)fetchPhotosWithCompletion:(void (^)(NSArray *, NSError *))completion {
     FlickrKit *fk = [FlickrKit sharedFlickrKit];
@@ -22,9 +25,14 @@
         NSMutableArray *photoURLs = nil;
         if (response) {
             photoURLs = [NSMutableArray array];
-            for (NSDictionary *photoData in [response valueForKeyPath:@"photos.photo"]) {
+            for (NSMutableDictionary *photoData in [response valueForKeyPath:@"photos.photo"]) {
+                
+                NSMutableDictionary * photos  = [photoData mutableCopy];
+                
                 NSURL *url = [fk photoURLForSize:FKPhotoSizeSmall240 fromPhotoDictionary:photoData];
-                [photoURLs addObject:url];
+                [photos setObject:url forKey:@"picUrl"];
+                [photoURLs addObject:photos];
+                
             }
         }
         if (completion) {

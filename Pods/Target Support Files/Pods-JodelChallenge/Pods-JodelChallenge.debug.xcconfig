@@ -1,9 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FlickrKit"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/FlickrKit"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/FlickrKit"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"FlickrKit" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -weak_framework "AssetsLibrary"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage" "${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView" "${PODS_CONFIGURATION_BUILD_DIR}/FlickrKit" "${PODS_CONFIGURATION_BUILD_DIR}/NotificationBar" "${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage/AlamofireImage.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView/FSPagerView.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/NotificationBar/NotificationBar.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift/Reachability.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Alamofire" -l"AlamofireImage" -l"EmptyDataSet-Swift" -l"FSPagerView" -l"FlickrKit" -l"NotificationBar" -l"ReachabilitySwift" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AssetsLibrary"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage/AlamofireImage.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView/FSPagerView.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/NotificationBar/NotificationBar.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift/Reachability.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage" "${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView" "${PODS_CONFIGURATION_BUILD_DIR}/NotificationBar" "${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift"

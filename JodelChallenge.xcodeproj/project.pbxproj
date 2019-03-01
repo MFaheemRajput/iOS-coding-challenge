@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F52243E1F73B0B800D7D77A /* FeedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89F9D11F73B010002A3FCB /* FeedCollectionViewController.m */; };
-		3F52243F1F73B0BD00D7D77A /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89F9CF1F73B005002A3FCB /* CollectionCell.m */; };
 		3F5224401F73B0C100D7D77A /* FlickrApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89F9CE1F73AFFC002A3FCB /* FlickrApi.m */; };
 		3FBCC7451F73AE9200D35147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7441F73AE9200D35147 /* AppDelegate.swift */; };
 		3FBCC74A1F73AE9200D35147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7481F73AE9200D35147 /* Main.storyboard */; };
@@ -16,6 +14,21 @@
 		3FBCC74F1F73AE9200D35147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC74D1F73AE9200D35147 /* LaunchScreen.storyboard */; };
 		3FBCC75A1F73AE9200D35147 /* JodelChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7591F73AE9200D35147 /* JodelChallengeTests.swift */; };
 		3FBCC7651F73AE9200D35147 /* JodelChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7641F73AE9200D35147 /* JodelChallengeUITests.swift */; };
+		7B3DCE872221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
+		7B3DCE882221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
+		7B3DCE892221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
+		7B6450CA2220D66B002B9C33 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
+		7B6450CB2220D66D002B9C33 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
+		7B93E23F222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
+		7B93E240222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
+		7B93E241222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
+		7BA444D922199223000F7F30 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
+		7BA444DF2219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
+		7BA444E02219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
+		7BA444E12219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
+		7BA444EC221A0B72000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
+		7BA444EF221A1324000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
+		7BA444F0221A1325000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
 		E3F2831F9F2C8EF141DFDAF9 /* libPods-JodelChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 310774A51D73A513D7854CD7 /* libPods-JodelChallenge.a */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +54,6 @@
 		3F89F9CC1F73AFFC002A3FCB /* JodelChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JodelChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F89F9CD1F73AFFC002A3FCB /* FlickrApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrApi.h; sourceTree = "<group>"; };
 		3F89F9CE1F73AFFC002A3FCB /* FlickrApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrApi.m; sourceTree = "<group>"; };
-		3F89F9CF1F73B005002A3FCB /* CollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
-		3F89F9D01F73B005002A3FCB /* CollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
-		3F89F9D11F73B010002A3FCB /* FeedCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedCollectionViewController.m; sourceTree = "<group>"; };
-		3F89F9D21F73B010002A3FCB /* FeedCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedCollectionViewController.h; sourceTree = "<group>"; };
 		3FBCC7411F73AE9200D35147 /* JodelChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JodelChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBCC7441F73AE9200D35147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBCC7491F73AE9200D35147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +67,11 @@
 		3FBCC7641F73AE9200D35147 /* JodelChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JodelChallengeUITests.swift; sourceTree = "<group>"; };
 		3FBCC7661F73AE9200D35147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		725C4F04B15E5272D8D1E3A0 /* Pods-JodelChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JodelChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7B3DCE862221B40E00F872B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B93E23E222750080037BEA8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewController.swift; sourceTree = "<group>"; };
+		7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		7BA444EB221A0B72000F7F30 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		A7096B2AF22017DBA2B785C4 /* Pods-JodelChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JodelChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,8 +123,7 @@
 		3F89F9CA1F73AF92002A3FCB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3F89F9D01F73B005002A3FCB /* CollectionCell.h */,
-				3F89F9CF1F73B005002A3FCB /* CollectionCell.m */,
+				7BA444EB221A0B72000F7F30 /* CollectionCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -118,8 +131,8 @@
 		3F89F9CB1F73AF97002A3FCB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F89F9D21F73B010002A3FCB /* FeedCollectionViewController.h */,
-				3F89F9D11F73B010002A3FCB /* FeedCollectionViewController.m */,
+				7B93E23D22274FA80037BEA8 /* PhotoViewController */,
+				7BA444D7221991CE000F7F30 /* FeedViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -127,6 +140,7 @@
 		3FBCC7381F73AE9200D35147 = {
 			isa = PBXGroup;
 			children = (
+				7B4933C92221A3A500B02A80 /* NetworkReachibility */,
 				3FBCC7431F73AE9200D35147 /* JodelChallenge */,
 				3FBCC7581F73AE9200D35147 /* JodelChallengeTests */,
 				3FBCC7631F73AE9200D35147 /* JodelChallengeUITests */,
@@ -149,6 +163,8 @@
 		3FBCC7431F73AE9200D35147 /* JodelChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7B6450C52220CE0B002B9C33 /* Extensions */,
+				7BA444DC2219BCAC000F7F30 /* ViewModels */,
 				3F89F9CB1F73AF97002A3FCB /* ViewControllers */,
 				3F89F9CA1F73AF92002A3FCB /* Cells */,
 				3F89F9C91F73AF8A002A3FCB /* NetworkAPI */,
@@ -187,6 +203,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B4933C92221A3A500B02A80 /* NetworkReachibility */ = {
+			isa = PBXGroup;
+			children = (
+				7B3DCE862221B40E00F872B8 /* NetworkManager.swift */,
+			);
+			path = NetworkReachibility;
+			sourceTree = "<group>";
+		};
+		7B6450C52220CE0B002B9C33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B93E23D22274FA80037BEA8 /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B93E23E222750080037BEA8 /* PhotoViewController.swift */,
+			);
+			path = PhotoViewController;
+			sourceTree = "<group>";
+		};
+		7BA444D7221991CE000F7F30 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
+		7BA444DC2219BCAC000F7F30 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,8 +253,6 @@
 				3FBCC73D1F73AE9200D35147 /* Sources */,
 				3FBCC73E1F73AE9200D35147 /* Frameworks */,
 				3FBCC73F1F73AE9200D35147 /* Resources */,
-				4A2F5F0821A6474B75CD362C /* [CP] Embed Pods Frameworks */,
-				344CB64F96B45271AFDA4C66 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,7 +306,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Jodel;
 				TargetAttributes = {
 					3FBCC7401F73AE9200D35147 = {
@@ -321,36 +374,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		344CB64F96B45271AFDA4C66 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A2F5F0821A6474B75CD362C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		896C3E1B6DD33A68D762DBDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,9 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F52243F1F73B0BD00D7D77A /* CollectionCell.m in Sources */,
-				3F52243E1F73B0B800D7D77A /* FeedCollectionViewController.m in Sources */,
+				7BA444DF2219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
+				7BA444EC221A0B72000F7F30 /* CollectionCell.swift in Sources */,
+				7BA444D922199223000F7F30 /* FeedCollectionViewController.swift in Sources */,
 				3FBCC7451F73AE9200D35147 /* AppDelegate.swift in Sources */,
+				7B93E23F222750080037BEA8 /* PhotoViewController.swift in Sources */,
+				7B3DCE872221B40E00F872B8 /* NetworkManager.swift in Sources */,
 				3F5224401F73B0C100D7D77A /* FlickrApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6450CA2220D66B002B9C33 /* FeedCollectionViewController.swift in Sources */,
+				7BA444E02219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
 				3FBCC75A1F73AE9200D35147 /* JodelChallengeTests.swift in Sources */,
+				7B93E240222750080037BEA8 /* PhotoViewController.swift in Sources */,
+				7BA444EF221A1324000F7F30 /* CollectionCell.swift in Sources */,
+				7B3DCE882221B40E00F872B8 /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +426,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6450CB2220D66D002B9C33 /* FeedCollectionViewController.swift in Sources */,
+				7BA444E12219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
 				3FBCC7651F73AE9200D35147 /* JodelChallengeUITests.swift in Sources */,
+				7B93E241222750080037BEA8 /* PhotoViewController.swift in Sources */,
+				7BA444F0221A1325000F7F30 /* CollectionCell.swift in Sources */,
+				7B3DCE892221B40E00F872B8 /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +484,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -455,6 +492,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -505,6 +543,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -512,6 +551,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -547,11 +587,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4M538E22HU;
 				INFOPLIST_FILE = JodelChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -565,11 +609,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4M538E22HU;
 				INFOPLIST_FILE = JodelChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,6 +634,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
@@ -602,6 +651,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
@@ -617,6 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JodelChallenge;
@@ -632,6 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JodelChallenge;
