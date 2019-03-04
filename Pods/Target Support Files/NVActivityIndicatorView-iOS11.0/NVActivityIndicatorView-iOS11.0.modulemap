@@ -1,0 +1,7 @@
+module NVActivityIndicatorView {
+  umbrella header "NVActivityIndicatorView-iOS11.0-umbrella.h"
+  exclude header "NVActivityIndicatorView-iOS11.4-umbrella.h"
+
+  export *
+  module * { export * }
+}

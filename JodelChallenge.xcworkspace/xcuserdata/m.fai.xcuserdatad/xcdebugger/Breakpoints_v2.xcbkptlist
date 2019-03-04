@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JodelChallenge/Cells/CollectionCell.swift"
-            timestampString = "573132324.965202"
+            timestampString = "573311235.136007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,29 +24,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
-            timestampString = "573132324.965287"
+            timestampString = "573311235.1362031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JodelChallenge/Cells/CollectionCell.swift"
-            timestampString = "573132324.9653569"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "awakeFromNib()"
-            landmarkType = "7">
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "FeedCollectionViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -72,7 +56,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkReachibility/NetworkManager.swift"
-            timestampString = "572659637.247161"
+            timestampString = "573309534.0024689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -88,60 +72,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
-            timestampString = "573132324.965469"
+            timestampString = "573311235.138052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "description(forEmptyDataSet:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
-            timestampString = "573132324.965534"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "checkInternetAndCallRequest()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
-            timestampString = "573132324.965598"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "fetchPhotosfromFlickr()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
-            timestampString = "573132324.965661"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "parsePhotos(_:)"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "buttonTitle(forEmptyDataSet:for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -152,12 +88,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JodelChallenge/AppDelegate.swift"
-            timestampString = "573132324.965728"
+            timestampString = "573311235.1396101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
+            timestampString = "573311235.139706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "fetchPhotosfromFlickr()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
+            timestampString = "573311235.140147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
+            timestampString = "573311235.140739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "checkInternetAndCallRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (JodelChallenge.NetworkManager) -&gt; () in JodelChallenge.FeedCollectionViewController.checkInternetAndCallRequest() -&gt; ()"
+                  moduleName = "JodelChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m.fai/Desktop/CodingChallange/iOS-coding-challenge/JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
+                  timestampString = "573345632.873596"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (JodelChallenge.NetworkManager) -&gt; () in JodelChallenge.FeedCollectionViewController.checkInternetAndCallRequest() -&gt; ()"
+                  moduleName = "JodelChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m.fai/Desktop/CodingChallange/iOS-coding-challenge/JodelChallenge/ViewControllers/FeedViewController/FeedCollectionViewController.swift"
+                  timestampString = "573345632.8778681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaiUnitTests/FaiUnitTests.swift"
+            timestampString = "573380048.7910711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "testIndicatorIsNotAnimating()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58396B3169F3036FF3F839DA05A695DF"
+               BlueprintIdentifier = "DCDED9F212898ABA711412F5CDD914BB"
                BuildableName = "libPods-JodelChallenge.a"
                BlueprintName = "Pods-JodelChallenge"
                ReferencedContainer = "container:Pods.xcodeproj">

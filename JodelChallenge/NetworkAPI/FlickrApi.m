@@ -8,6 +8,7 @@
 #import <FlickrKit/FlickrKit.h>
 #import "JodelChallenge-Swift.h"
 
+
 @implementation FlickrApi
 
 
@@ -22,22 +23,26 @@
     interesting.page = @"1";
     
     [fk call:interesting completion:^(NSDictionary *response, NSError *error) {
-        NSMutableArray *photoURLs = nil;
+        NSMutableArray *photosArray = nil;
         if (response) {
-            photoURLs = [NSMutableArray array];
+            photosArray = [NSMutableArray array];
             for (NSMutableDictionary *photoData in [response valueForKeyPath:@"photos.photo"]) {
                 
-                NSMutableDictionary * photos  = [photoData mutableCopy];
+                NSMutableDictionary * photoDictionary  = [photoData mutableCopy];
                 
                 NSURL *url = [fk photoURLForSize:FKPhotoSizeSmall240 fromPhotoDictionary:photoData];
-                [photos setObject:url forKey:@"picUrl"];
-                [photoURLs addObject:photos];
+                [photoDictionary setObject:url forKey:@"picUrl"];
+                [photosArray addObject:photoDictionary];
                 
             }
         }
         if (completion) {
-            completion(photoURLs, error);
+            completion(photosArray, error);
         }
     }];
 }
+
+
+
+
 @end

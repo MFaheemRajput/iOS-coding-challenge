@@ -1,0 +1,1 @@
+../../../Target Support Files/AlamofireImage-iOS11.0/AlamofireImage-iOS11.0-umbrella.h

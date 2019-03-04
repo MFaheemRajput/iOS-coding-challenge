@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class CollectionCell: UICollectionViewCell, PhotoViewModelProtocol {
     
@@ -20,7 +21,7 @@ class CollectionCell: UICollectionViewCell, PhotoViewModelProtocol {
             
         }
     }
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var imageView: UIImageView! {
         willSet {//print("loading start")
             
@@ -29,15 +30,22 @@ class CollectionCell: UICollectionViewCell, PhotoViewModelProtocol {
             
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         //Initialization code
-        //self.titleLabel = UILabel()
-        //self.imageView = UIImageView()
-        
     }
+    
     public func setupWithPhoto(with photo: PhotosViewModel?) {
+        DispatchQueue.main.async {
+            
         photo?.delegate = self
+        
+        guard let indicator = photo?.indicatorView else {
+            return
+        }
+        
+        self.addSubview(indicator)
         
         guard let name = photo?.title else {
             self.titleLabel.text = ""
@@ -50,23 +58,12 @@ class CollectionCell: UICollectionViewCell, PhotoViewModelProtocol {
             return
         }
         guard let img = photo?.image else {
-            //self.titleLabel.text = "No Pic Found"
             return
         }
         
         self.imageView!.image = img
-        
-//        indicator.startAnimating()
-//        self.imageView!.setImageWith(URLRequest(url: url), placeholderImage: nil, success: { request, response, image in
-//            self.imageView!.image = image
-//            self.indicator.isHidden = true
-//            self.indicator.stopAnimating()
-//        }, failure: { request, response, error in
-//            self.indicator.isHidden = true
-//            self.indicator.stopAnimating()
-//        })
-        
-
+            
+        }
     }
     
     // MARK:  PhotoModelView Protocol

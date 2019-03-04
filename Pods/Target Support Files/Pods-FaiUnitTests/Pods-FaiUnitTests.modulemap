@@ -1,0 +1,6 @@
+module Pods_FaiUnitTests {
+  umbrella header "Pods-FaiUnitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

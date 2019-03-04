@@ -12,35 +12,27 @@
 		3FBCC74A1F73AE9200D35147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7481F73AE9200D35147 /* Main.storyboard */; };
 		3FBCC74C1F73AE9200D35147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC74B1F73AE9200D35147 /* Assets.xcassets */; };
 		3FBCC74F1F73AE9200D35147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC74D1F73AE9200D35147 /* LaunchScreen.storyboard */; };
-		3FBCC75A1F73AE9200D35147 /* JodelChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7591F73AE9200D35147 /* JodelChallengeTests.swift */; };
-		3FBCC7651F73AE9200D35147 /* JodelChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7641F73AE9200D35147 /* JodelChallengeUITests.swift */; };
+		772815B25B212F82FFF23685 /* libPods-FaiUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0F660CFD238C40E74B0EA9 /* libPods-FaiUnitTests.a */; };
+		7B31FF1B222C775E00C83F1B /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
+		7B354587222B1E9200A30600 /* FaiUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B354586222B1E9200A30600 /* FaiUITest.swift */; };
 		7B3DCE872221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
-		7B3DCE882221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
-		7B3DCE892221B40E00F872B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3DCE862221B40E00F872B8 /* NetworkManager.swift */; };
-		7B6450CA2220D66B002B9C33 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
-		7B6450CB2220D66D002B9C33 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
+		7B44494A222AA00100BDAC25 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B444949222AA00100BDAC25 /* LoadingViewController.swift */; };
+		7B4701AD222B41020026373A /* FaiUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B354594222B1EB000A30600 /* FaiUnitTests.swift */; };
 		7B93E23F222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
-		7B93E240222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
-		7B93E241222750080037BEA8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93E23E222750080037BEA8 /* PhotoViewController.swift */; };
 		7BA444D922199223000F7F30 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */; };
-		7BA444DF2219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
-		7BA444E02219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
-		7BA444E12219BCEB000F7F30 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */; };
 		7BA444EC221A0B72000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
-		7BA444EF221A1324000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
-		7BA444F0221A1325000F7F30 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA444EB221A0B72000F7F30 /* CollectionCell.swift */; };
 		E3F2831F9F2C8EF141DFDAF9 /* libPods-JodelChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 310774A51D73A513D7854CD7 /* libPods-JodelChallenge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3FBCC7561F73AE9200D35147 /* PBXContainerItemProxy */ = {
+		7B354589222B1E9200A30600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FBCC7391F73AE9200D35147 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3FBCC7401F73AE9200D35147;
 			remoteInfo = JodelChallenge;
 		};
-		3FBCC7611F73AE9200D35147 /* PBXContainerItemProxy */ = {
+		7B354597222B1EB000A30600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FBCC7391F73AE9200D35147 /* Project object */;
 			proxyType = 1;
@@ -50,7 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0F660CFD238C40E74B0EA9 /* libPods-FaiUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaiUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		310774A51D73A513D7854CD7 /* libPods-JodelChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JodelChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3280AD3C8DE99AF652AD0779 /* Pods-FaiUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaiUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaiUnitTests/Pods-FaiUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F89F9CC1F73AFFC002A3FCB /* JodelChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JodelChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F89F9CD1F73AFFC002A3FCB /* FlickrApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrApi.h; sourceTree = "<group>"; };
 		3F89F9CE1F73AFFC002A3FCB /* FlickrApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrApi.m; sourceTree = "<group>"; };
@@ -60,19 +54,21 @@
 		3FBCC74B1F73AE9200D35147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBCC74E1F73AE9200D35147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBCC7501F73AE9200D35147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FBCC7551F73AE9200D35147 /* JodelChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JodelChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FBCC7591F73AE9200D35147 /* JodelChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JodelChallengeTests.swift; sourceTree = "<group>"; };
-		3FBCC75B1F73AE9200D35147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FBCC7601F73AE9200D35147 /* JodelChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JodelChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FBCC7641F73AE9200D35147 /* JodelChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JodelChallengeUITests.swift; sourceTree = "<group>"; };
-		3FBCC7661F73AE9200D35147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		725C4F04B15E5272D8D1E3A0 /* Pods-JodelChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JodelChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7B354584222B1E9200A30600 /* FaiUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaiUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B354586222B1E9200A30600 /* FaiUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaiUITest.swift; sourceTree = "<group>"; };
+		7B354588222B1E9200A30600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B354592222B1EAF00A30600 /* FaiUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaiUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B354594222B1EB000A30600 /* FaiUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaiUnitTests.swift; sourceTree = "<group>"; };
+		7B354596222B1EB000A30600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B3DCE862221B40E00F872B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B444949222AA00100BDAC25 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		7B93E23E222750080037BEA8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		7BA444D822199223000F7F30 /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewController.swift; sourceTree = "<group>"; };
 		7BA444DE2219BCEB000F7F30 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		7BA444EB221A0B72000F7F30 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		A7096B2AF22017DBA2B785C4 /* Pods-JodelChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JodelChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B1A7A2AD6F673CACAC67FBAF /* Pods-FaiUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaiUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaiUnitTests/Pods-FaiUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +80,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC7521F73AE9200D35147 /* Frameworks */ = {
+		7B354581222B1E9200A30600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC75D1F73AE9200D35147 /* Frameworks */ = {
+		7B35458F222B1EAF00A30600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772815B25B212F82FFF23685 /* libPods-FaiUnitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +103,8 @@
 			children = (
 				725C4F04B15E5272D8D1E3A0 /* Pods-JodelChallenge.debug.xcconfig */,
 				A7096B2AF22017DBA2B785C4 /* Pods-JodelChallenge.release.xcconfig */,
+				3280AD3C8DE99AF652AD0779 /* Pods-FaiUnitTests.debug.xcconfig */,
+				B1A7A2AD6F673CACAC67FBAF /* Pods-FaiUnitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		3F89F9CB1F73AF97002A3FCB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7B444948222A9FD500BDAC25 /* LoadingViewController */,
 				7B93E23D22274FA80037BEA8 /* PhotoViewController */,
 				7BA444D7221991CE000F7F30 /* FeedViewController */,
 			);
@@ -142,8 +142,8 @@
 			children = (
 				7B4933C92221A3A500B02A80 /* NetworkReachibility */,
 				3FBCC7431F73AE9200D35147 /* JodelChallenge */,
-				3FBCC7581F73AE9200D35147 /* JodelChallengeTests */,
-				3FBCC7631F73AE9200D35147 /* JodelChallengeUITests */,
+				7B354585222B1E9200A30600 /* FaiUITest */,
+				7B354593222B1EB000A30600 /* FaiUnitTests */,
 				3FBCC7421F73AE9200D35147 /* Products */,
 				1E27EA24C815FAE48893FF55 /* Pods */,
 				760BAB3B5631AF7F57670803 /* Frameworks */,
@@ -154,8 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				3FBCC7411F73AE9200D35147 /* JodelChallenge.app */,
-				3FBCC7551F73AE9200D35147 /* JodelChallengeTests.xctest */,
-				3FBCC7601F73AE9200D35147 /* JodelChallengeUITests.xctest */,
+				7B354584222B1E9200A30600 /* FaiUITest.xctest */,
+				7B354592222B1EAF00A30600 /* FaiUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,30 +177,39 @@
 			path = JodelChallenge;
 			sourceTree = "<group>";
 		};
-		3FBCC7581F73AE9200D35147 /* JodelChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				3FBCC7591F73AE9200D35147 /* JodelChallengeTests.swift */,
-				3FBCC75B1F73AE9200D35147 /* Info.plist */,
-			);
-			path = JodelChallengeTests;
-			sourceTree = "<group>";
-		};
-		3FBCC7631F73AE9200D35147 /* JodelChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3FBCC7641F73AE9200D35147 /* JodelChallengeUITests.swift */,
-				3FBCC7661F73AE9200D35147 /* Info.plist */,
-			);
-			path = JodelChallengeUITests;
-			sourceTree = "<group>";
-		};
 		760BAB3B5631AF7F57670803 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				310774A51D73A513D7854CD7 /* libPods-JodelChallenge.a */,
+				2C0F660CFD238C40E74B0EA9 /* libPods-FaiUnitTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B354585222B1E9200A30600 /* FaiUITest */ = {
+			isa = PBXGroup;
+			children = (
+				7B354586222B1E9200A30600 /* FaiUITest.swift */,
+				7B354588222B1E9200A30600 /* Info.plist */,
+			);
+			path = FaiUITest;
+			sourceTree = "<group>";
+		};
+		7B354593222B1EB000A30600 /* FaiUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B354594222B1EB000A30600 /* FaiUnitTests.swift */,
+				7B354596222B1EB000A30600 /* Info.plist */,
+			);
+			path = FaiUnitTests;
+			sourceTree = "<group>";
+		};
+		7B444948222A9FD500BDAC25 /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B444949222AA00100BDAC25 /* LoadingViewController.swift */,
+			);
+			path = LoadingViewController;
 			sourceTree = "<group>";
 		};
 		7B4933C92221A3A500B02A80 /* NetworkReachibility */ = {
@@ -253,6 +262,7 @@
 				3FBCC73D1F73AE9200D35147 /* Sources */,
 				3FBCC73E1F73AE9200D35147 /* Frameworks */,
 				3FBCC73F1F73AE9200D35147 /* Resources */,
+				E0BD68807361C40A30236BAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,41 +273,43 @@
 			productReference = 3FBCC7411F73AE9200D35147 /* JodelChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3FBCC7541F73AE9200D35147 /* JodelChallengeTests */ = {
+		7B354583222B1E9200A30600 /* FaiUITest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FBCC76C1F73AE9200D35147 /* Build configuration list for PBXNativeTarget "JodelChallengeTests" */;
+			buildConfigurationList = 7B35458B222B1E9200A30600 /* Build configuration list for PBXNativeTarget "FaiUITest" */;
 			buildPhases = (
-				3FBCC7511F73AE9200D35147 /* Sources */,
-				3FBCC7521F73AE9200D35147 /* Frameworks */,
-				3FBCC7531F73AE9200D35147 /* Resources */,
+				7B354580222B1E9200A30600 /* Sources */,
+				7B354581222B1E9200A30600 /* Frameworks */,
+				7B354582222B1E9200A30600 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3FBCC7571F73AE9200D35147 /* PBXTargetDependency */,
+				7B35458A222B1E9200A30600 /* PBXTargetDependency */,
 			);
-			name = JodelChallengeTests;
-			productName = JodelChallengeTests;
-			productReference = 3FBCC7551F73AE9200D35147 /* JodelChallengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3FBCC75F1F73AE9200D35147 /* JodelChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3FBCC76F1F73AE9200D35147 /* Build configuration list for PBXNativeTarget "JodelChallengeUITests" */;
-			buildPhases = (
-				3FBCC75C1F73AE9200D35147 /* Sources */,
-				3FBCC75D1F73AE9200D35147 /* Frameworks */,
-				3FBCC75E1F73AE9200D35147 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3FBCC7621F73AE9200D35147 /* PBXTargetDependency */,
-			);
-			name = JodelChallengeUITests;
-			productName = JodelChallengeUITests;
-			productReference = 3FBCC7601F73AE9200D35147 /* JodelChallengeUITests.xctest */;
+			name = FaiUITest;
+			productName = FaiUITest;
+			productReference = 7B354584222B1E9200A30600 /* FaiUITest.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7B354591222B1EAF00A30600 /* FaiUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B354599222B1EB000A30600 /* Build configuration list for PBXNativeTarget "FaiUnitTests" */;
+			buildPhases = (
+				D3907836A9241D75D38A85C8 /* [CP] Check Pods Manifest.lock */,
+				7B35458E222B1EAF00A30600 /* Sources */,
+				7B35458F222B1EAF00A30600 /* Frameworks */,
+				7B354590222B1EAF00A30600 /* Resources */,
+				27894D30E9E20879D270BBB1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B354598222B1EB000A30600 /* PBXTargetDependency */,
+			);
+			name = FaiUnitTests;
+			productName = FaiUnitTests;
+			productReference = 7B354592222B1EAF00A30600 /* FaiUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -305,7 +317,7 @@
 		3FBCC7391F73AE9200D35147 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Jodel;
 				TargetAttributes = {
@@ -314,13 +326,13 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					3FBCC7541F73AE9200D35147 = {
-						CreatedOnToolsVersion = 9.0;
+					7B354583222B1E9200A30600 = {
+						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3FBCC7401F73AE9200D35147;
 					};
-					3FBCC75F1F73AE9200D35147 = {
-						CreatedOnToolsVersion = 9.0;
+					7B354591222B1EAF00A30600 = {
+						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3FBCC7401F73AE9200D35147;
 					};
@@ -340,8 +352,8 @@
 			projectRoot = "";
 			targets = (
 				3FBCC7401F73AE9200D35147 /* JodelChallenge */,
-				3FBCC7541F73AE9200D35147 /* JodelChallengeTests */,
-				3FBCC75F1F73AE9200D35147 /* JodelChallengeUITests */,
+				7B354583222B1E9200A30600 /* FaiUITest */,
+				7B354591222B1EAF00A30600 /* FaiUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,14 +369,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC7531F73AE9200D35147 /* Resources */ = {
+		7B354582222B1E9200A30600 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC75E1F73AE9200D35147 /* Resources */ = {
+		7B354590222B1EAF00A30600 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,6 +386,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		27894D30E9E20879D270BBB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaiUnitTests/Pods-FaiUnitTests-resources.sh",
+				"${PODS_ROOT}/ImageSlideshow/ImageSlideshow/Assets/ic_cross_white@2x.png",
+				"${PODS_ROOT}/ImageSlideshow/ImageSlideshow/Assets/ic_cross_white@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_cross_white@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_cross_white@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaiUnitTests/Pods-FaiUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		896C3E1B6DD33A68D762DBDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +428,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3907836A9241D75D38A85C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaiUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BD68807361C40A30236BAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge-resources.sh",
+				"${PODS_ROOT}/ImageSlideshow/ImageSlideshow/Assets/ic_cross_white@2x.png",
+				"${PODS_ROOT}/ImageSlideshow/ImageSlideshow/Assets/ic_cross_white@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_cross_white@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_cross_white@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JodelChallenge/Pods-JodelChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -399,54 +477,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA444DF2219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
 				7BA444EC221A0B72000F7F30 /* CollectionCell.swift in Sources */,
 				7BA444D922199223000F7F30 /* FeedCollectionViewController.swift in Sources */,
+				7B44494A222AA00100BDAC25 /* LoadingViewController.swift in Sources */,
 				3FBCC7451F73AE9200D35147 /* AppDelegate.swift in Sources */,
 				7B93E23F222750080037BEA8 /* PhotoViewController.swift in Sources */,
+				7B31FF1B222C775E00C83F1B /* PhotoViewModel.swift in Sources */,
 				7B3DCE872221B40E00F872B8 /* NetworkManager.swift in Sources */,
 				3F5224401F73B0C100D7D77A /* FlickrApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC7511F73AE9200D35147 /* Sources */ = {
+		7B354580222B1E9200A30600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6450CA2220D66B002B9C33 /* FeedCollectionViewController.swift in Sources */,
-				7BA444E02219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
-				3FBCC75A1F73AE9200D35147 /* JodelChallengeTests.swift in Sources */,
-				7B93E240222750080037BEA8 /* PhotoViewController.swift in Sources */,
-				7BA444EF221A1324000F7F30 /* CollectionCell.swift in Sources */,
-				7B3DCE882221B40E00F872B8 /* NetworkManager.swift in Sources */,
+				7B354587222B1E9200A30600 /* FaiUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FBCC75C1F73AE9200D35147 /* Sources */ = {
+		7B35458E222B1EAF00A30600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6450CB2220D66D002B9C33 /* FeedCollectionViewController.swift in Sources */,
-				7BA444E12219BCEB000F7F30 /* PhotoViewModel.swift in Sources */,
-				3FBCC7651F73AE9200D35147 /* JodelChallengeUITests.swift in Sources */,
-				7B93E241222750080037BEA8 /* PhotoViewController.swift in Sources */,
-				7BA444F0221A1325000F7F30 /* CollectionCell.swift in Sources */,
-				7B3DCE892221B40E00F872B8 /* NetworkManager.swift in Sources */,
+				7B4701AD222B41020026373A /* FaiUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3FBCC7571F73AE9200D35147 /* PBXTargetDependency */ = {
+		7B35458A222B1E9200A30600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3FBCC7401F73AE9200D35147 /* JodelChallenge */;
-			targetProxy = 3FBCC7561F73AE9200D35147 /* PBXContainerItemProxy */;
+			targetProxy = 7B354589222B1E9200A30600 /* PBXContainerItemProxy */;
 		};
-		3FBCC7621F73AE9200D35147 /* PBXTargetDependency */ = {
+		7B354598222B1EB000A30600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3FBCC7401F73AE9200D35147 /* JodelChallenge */;
-			targetProxy = 3FBCC7611F73AE9200D35147 /* PBXContainerItemProxy */;
+			targetProxy = 7B354597222B1EB000A30600 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -593,13 +662,13 @@
 				DEVELOPMENT_TEAM = 4M538E22HU;
 				INFOPLIST_FILE = JodelChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.JodelChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -615,78 +684,84 @@
 				DEVELOPMENT_TEAM = 4M538E22HU;
 				INFOPLIST_FILE = JodelChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallenge1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.JodelChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		3FBCC76D1F73AE9200D35147 /* Debug */ = {
+		7B35458C222B1E9200A30600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JodelChallengeTests/Info.plist;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				INFOPLIST_FILE = FaiUITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.FaiUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
-			};
-			name = Debug;
-		};
-		3FBCC76E1F73AE9200D35147 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JodelChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
-			};
-			name = Release;
-		};
-		3FBCC7701F73AE9200D35147 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JodelChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JodelChallenge;
 			};
 			name = Debug;
 		};
-		3FBCC7711F73AE9200D35147 /* Release */ = {
+		7B35458D222B1E9200A30600 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JodelChallengeUITests/Info.plist;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				INFOPLIST_FILE = FaiUITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jodel.JodelChallengeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.FaiUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JodelChallenge/NetworkAPI/JodelChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JodelChallenge;
+			};
+			name = Release;
+		};
+		7B35459A222B1EB000A30600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3280AD3C8DE99AF652AD0779 /* Pods-FaiUnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				INFOPLIST_FILE = FaiUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.FaiUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
+			};
+			name = Debug;
+		};
+		7B35459B222B1EB000A30600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A7A2AD6F673CACAC67FBAF /* Pods-FaiUnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				INFOPLIST_FILE = FaiUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technerd.FaiUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JodelChallenge.app/JodelChallenge";
 			};
 			name = Release;
 		};
@@ -711,20 +786,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FBCC76C1F73AE9200D35147 /* Build configuration list for PBXNativeTarget "JodelChallengeTests" */ = {
+		7B35458B222B1E9200A30600 /* Build configuration list for PBXNativeTarget "FaiUITest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FBCC76D1F73AE9200D35147 /* Debug */,
-				3FBCC76E1F73AE9200D35147 /* Release */,
+				7B35458C222B1E9200A30600 /* Debug */,
+				7B35458D222B1E9200A30600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FBCC76F1F73AE9200D35147 /* Build configuration list for PBXNativeTarget "JodelChallengeUITests" */ = {
+		7B354599222B1EB000A30600 /* Build configuration list for PBXNativeTarget "FaiUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FBCC7701F73AE9200D35147 /* Debug */,
-				3FBCC7711F73AE9200D35147 /* Release */,
+				7B35459A222B1EB000A30600 /* Debug */,
+				7B35459B222B1EB000A30600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

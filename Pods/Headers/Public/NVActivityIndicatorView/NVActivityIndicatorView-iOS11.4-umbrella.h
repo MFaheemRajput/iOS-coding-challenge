@@ -1,0 +1,1 @@
+../../../Target Support Files/NVActivityIndicatorView-iOS11.4/NVActivityIndicatorView-iOS11.4-umbrella.h

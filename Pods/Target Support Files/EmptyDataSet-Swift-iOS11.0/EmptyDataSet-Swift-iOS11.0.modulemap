@@ -1,0 +1,7 @@
+module EmptyDataSet_Swift {
+  umbrella header "EmptyDataSet-Swift-iOS11.0-umbrella.h"
+  exclude header "EmptyDataSet-Swift-iOS11.4-umbrella.h"
+
+  export *
+  module * { export * }
+}

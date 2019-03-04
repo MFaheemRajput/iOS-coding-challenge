@@ -19,18 +19,25 @@ PODS:
     - Alamofire (~> 4.5)
   - EmptyDataSet-Swift (4.0.5)
   - FlickrKit (1.0.9)
-  - FSPagerView (0.7.2)
+  - ImageSlideshow (1.6.1):
+    - ImageSlideshow/Core (= 1.6.1)
+  - ImageSlideshow/Core (1.6.1)
   - NotificationBar (0.1)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
   - ReachabilitySwift (4.1.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire
   - AlamofireImage
   - EmptyDataSet-Swift
   - FlickrKit
-  - FSPagerView
+  - ImageSlideshow (~> 1.6)
   - NotificationBar (from `https://github.com/furqanmk/NotificationBar.git`)
+  - NVActivityIndicatorView
   - ReachabilitySwift
   - SwiftLint
 
@@ -41,7 +48,8 @@ SPEC REPOS:
     - AlamofireImage
     - EmptyDataSet-Swift
     - FlickrKit
-    - FSPagerView
+    - ImageSlideshow
+    - NVActivityIndicatorView
     - ReachabilitySwift
     - SwiftLint
 
@@ -60,11 +68,12 @@ SPEC CHECKSUMS:
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   EmptyDataSet-Swift: a25810f50c3adfaa3840aa33ae8b5ba12ac29279
   FlickrKit: 79ffaf64a12293ba2b1aa8a2e53a4958cb113256
-  FSPagerView: 7515f63c424da71623d299d4fbbfb3dd884642ff
+  ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
   NotificationBar: df966e2110a18df7de5a7531980f8f15e7577fda
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 666d1aff9a4a2c071fe17ee9f9fe5eeb17b8091b
+PODFILE CHECKSUM: c3b2bb5cda6cdf9612760a78a7793f0f2e99aea4
 
 COCOAPODS: 1.6.1

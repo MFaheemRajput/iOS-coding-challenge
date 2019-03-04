@@ -13,7 +13,7 @@ import NotificationBar
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var isAppFirstTimeRun = true
+    var canDisplayNotification = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -21,24 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NetworkManager.sharedInstance.reachability.whenUnreachable = { reachability in
             NotificationBar(over: (self.window?.rootViewController)!, text: "No Internet connectivity", style: .error).show()
-            self.displayNotification("No Internet connectivity")
-            
+            self.canDisplayNotification = true
         }
         NetworkManager.sharedInstance.reachability.whenReachable = { reachability in
-            if self.isAppFirstTimeRun != true{
+            if self.canDisplayNotification == true{
                 NotificationBar(over: (self.window?.rootViewController)!, text: "Back Online", style: .success).show()
-                self.displayNotification("You are online")
+                
             }
-            
         }
-        self.isAppFirstTimeRun = false
+        
         return true
     }
     
-    
-    
-    func displayNotification(_ msg: String!){
-        print(msg)
-    }
     
 }

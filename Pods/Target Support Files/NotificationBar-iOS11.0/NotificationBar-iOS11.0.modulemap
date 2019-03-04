@@ -1,0 +1,7 @@
+module NotificationBar {
+  umbrella header "NotificationBar-iOS11.0-umbrella.h"
+  exclude header "NotificationBar-iOS11.4-umbrella.h"
+
+  export *
+  module * { export * }
+}

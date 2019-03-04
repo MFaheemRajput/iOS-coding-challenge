@@ -8,12 +8,14 @@
 
 import UIKit
 import EmptyDataSet_Swift
+import NotificationBar
 
 private let reuseIdentifier = "CollectionCell"
 
 class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSource  ,EmptyDataSetDelegate {
-
+    
     var photos: [PhotosViewModel]?
+    var loadingVC: LoadingViewController? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,15 +26,21 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
         self.collectionView?.addSubview(self.refreshControl)
         self.collectionView?.emptyDataSetView { view in
             view.didTapDataButton {
+
+                    print("tap is working ")
                     // If data is empty so user can send request again.
                     self.checkInternetAndCallRequest()
-                
                 }
         }
         
-        // This is first time we are sending the request to flickr
-        // To get images from it.
-                    self.checkInternetAndCallRequest()
+        
+        self.loadingVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoadingViewController") as? LoadingViewController
+        present(self.loadingVC!, animated: false) {
+            self.loadingVC?.startAnimation()
+            // This is first time we are sending the request to flickr
+            // To get images from it.
+            self.checkInternetAndCallRequest()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,7 +54,6 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
             #selector(self.handleRefresh(_:)),
                                  for: UIControlEvents.valueChanged)
         refreshControl.tintColor = UIColor.red
-        
         return refreshControl
     }()
     
@@ -56,16 +63,27 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
     }
     
     // MARK: - Custom Methods
-    
     func checkInternetAndCallRequest(){
         NetworkManager.isReachable { networkManagerInstance in
             self.fetchPhotosfromFlickr()
+        }
+        NetworkManager.isUnreachable { networkManagerInstance in
+            
+            DispatchQueue.main.async {
+                NotificationBar(over: self, text: "No Internet connectivity", style: .error).show()
+                self.loadingVC?.stopAnimation()
+                self.loadingVC?.dismiss(animated: false, completion: nil)
+            }
         }
     }
     
     fileprivate func fetchPhotosfromFlickr(){
         FlickrApi.fetchPhotos { (photos, error) in
             if error != nil {
+                DispatchQueue.main.async {
+                    self.loadingVC?.stopAnimation()
+                    self.loadingVC?.dismiss(animated: false, completion: nil)
+                }
                 return
             }
             self.photos = nil
@@ -73,11 +91,15 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
             DispatchQueue.main.async {
                 // here i am adding View model layer
                 // now this controller comunicating with view model
+                self.loadingVC?.stopAnimation()
+                self.loadingVC?.dismiss(animated: false, completion: nil)
                 self.collectionView?.reloadData()
             }
         }
     }
 
+    
+    // TODO: i want to shit this fucntion to Flickr API Class 
     func parsePhotos(_ photosParam: NSArray) -> [PhotosViewModel]? {
         var photoArray = [PhotosViewModel]()
         for photo in photosParam {
@@ -86,15 +108,8 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
         return photoArray
     }
     
-    func stringToAttributedString(_ text: String?) -> NSAttributedString? {
-        let attribute = [ kCTForegroundColorAttributeName: UIColor.lightGray]
-        guard let textString = text else {
-            return NSAttributedString(string: "", attributes: attribute as [NSAttributedStringKey : Any])
-        }
-        let attributedString = NSAttributedString(string: textString, attributes: attribute as [NSAttributedStringKey : Any])
-        return attributedString
-    }
-
+    
+    
     
     // MARK: - Navigation
 
@@ -104,16 +119,13 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
         // Pass the selected object to the new view controller.
         if segue.identifier == "PhotoVC" {
             if let controller = segue.destination as? PhotoViewController {
-                
                 if let cell = sender as? CollectionCell{
                     let indexPath = self.collectionView!.indexPath(for: cell)
                     controller.selectedIndex = (indexPath?.row)!
                 }
                 controller.photos = self.photos
-                
             }
         }
-        
     }
  
 
@@ -143,11 +155,7 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
         cell?.setupWithPhoto(with: self.photos?[indexPath.row])
         return cell!
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected index \(indexPath.row)")
-    }
-    
+
     // MARK: - Empty Dataset
     // Asks the data source for the title of the dataset.
     // The dataset uses a fixed font style by default, if no attributes are set.
@@ -176,6 +184,16 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
     /// Asks the delegate for touch permission. Default is true.
     func emptyDataSetShouldAllowTouch(_ scrollView: UIScrollView) -> Bool{
         return true
-        
     }
+    
+    func stringToAttributedString(_ text: String?) -> NSAttributedString? {
+        let attribute = [ kCTForegroundColorAttributeName: UIColor.lightGray]
+        guard let textString = text else {
+            return NSAttributedString(string: "", attributes: attribute as [NSAttributedStringKey : Any])
+        }
+        let attributedString = NSAttributedString(string: textString, attributes: attribute as [NSAttributedStringKey : Any])
+        return attributedString
+    }
+
+    
 }

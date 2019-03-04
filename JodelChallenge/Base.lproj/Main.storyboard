@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="vve-ha-RJW">
             <objects>
                 <collectionViewController storyboardIdentifier="FeedCollectionViewController" id="GZw-80-Ba9" customClass="FeedCollectionViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,27 +43,20 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="LuW-5I-pmH">
-                                            <rect key="frame" x="347" y="4" width="20" height="44"/>
-                                        </activityIndicatorView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottomMargin" secondItem="Nau-c0-AoY" secondAttribute="bottom" constant="3" id="2hz-47-gFo"/>
-                                    <constraint firstItem="Nau-c0-AoY" firstAttribute="top" secondItem="LuW-5I-pmH" secondAttribute="bottom" constant="19" id="NZA-2j-URM"/>
                                     <constraint firstItem="Nau-c0-AoY" firstAttribute="leading" secondItem="HNq-Nl-u9j" secondAttribute="leadingMargin" constant="2" id="WTf-eu-3KC"/>
                                     <constraint firstItem="gBN-oE-nWL" firstAttribute="top" secondItem="HNq-Nl-u9j" secondAttribute="top" id="a0v-Wd-JhM"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="Nau-c0-AoY" secondAttribute="trailing" constant="3" id="bMs-Hx-BUr"/>
                                     <constraint firstItem="gBN-oE-nWL" firstAttribute="leading" secondItem="HNq-Nl-u9j" secondAttribute="leading" id="nSn-Ww-eB7"/>
-                                    <constraint firstItem="LuW-5I-pmH" firstAttribute="trailing" secondItem="HNq-Nl-u9j" secondAttribute="trailingMargin" id="pWf-eS-o7A"/>
                                     <constraint firstAttribute="trailing" secondItem="gBN-oE-nWL" secondAttribute="trailing" id="qhT-oS-fhh"/>
                                     <constraint firstAttribute="bottom" secondItem="gBN-oE-nWL" secondAttribute="bottom" id="qrn-bi-MTC"/>
-                                    <constraint firstItem="LuW-5I-pmH" firstAttribute="top" secondItem="HNq-Nl-u9j" secondAttribute="topMargin" constant="-4" id="yZm-Xm-AhI"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="gBN-oE-nWL" id="jPA-B0-fqq"/>
-                                    <outlet property="indicator" destination="LuW-5I-pmH" id="QLT-KK-jff"/>
                                     <outlet property="titleLabel" destination="Nau-c0-AoY" id="8Bc-HF-QEp"/>
                                     <segue destination="knX-Be-00t" kind="show" identifier="PhotoVC" id="Akr-uc-DUu"/>
                                 </connections>
@@ -75,13 +68,13 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Item" id="q7C-rv-ccb"/>
-                    <navigationItem key="navigationItem" id="Lq5-G3-xbP"/>
+                    <navigationItem key="navigationItem" title="Home" id="Lq5-G3-xbP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Rh-DI-kkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581.1594202898552" y="-183.42391304347828"/>
+            <point key="canvasLocation" x="1324" y="-197"/>
         </scene>
-        <!--Data Source-->
+        <!--Photo View Controller-->
         <scene sceneID="4Ba-uF-2xP">
             <objects>
                 <viewController storyboardIdentifier="PhotoViewController" id="knX-Be-00t" customClass="PhotoViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,21 +86,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fM-D8-etl" customClass="FSPagerView" customModule="FSPagerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fM-D8-etl" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="knX-Be-00t" id="AGd-5k-oAb"/>
-                                    <outlet property="delegate" destination="knX-Be-00t" id="fzA-k3-p9q"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0fM-D8-etl" firstAttribute="leading" secondItem="whF-E8-7le" secondAttribute="leading" id="OLz-ZJ-jgd"/>
-                            <constraint firstItem="UDG-WJ-YLK" firstAttribute="top" secondItem="0fM-D8-etl" secondAttribute="bottom" id="Zeb-gq-fd1"/>
-                            <constraint firstAttribute="trailing" secondItem="0fM-D8-etl" secondAttribute="trailing" id="bne-Pm-55A"/>
-                            <constraint firstItem="0fM-D8-etl" firstAttribute="top" secondItem="bHo-Rx-7h9" secondAttribute="bottom" id="d9G-RY-85q"/>
+                            <constraint firstItem="0fM-D8-etl" firstAttribute="leading" secondItem="whF-E8-7le" secondAttribute="leading" id="Emi-RJ-ETn"/>
+                            <constraint firstAttribute="trailing" secondItem="0fM-D8-etl" secondAttribute="trailing" id="JwS-gK-ip8"/>
+                            <constraint firstItem="0fM-D8-etl" firstAttribute="top" secondItem="bHo-Rx-7h9" secondAttribute="bottom" id="PHu-ST-vLH"/>
+                            <constraint firstItem="UDG-WJ-YLK" firstAttribute="top" secondItem="0fM-D8-etl" secondAttribute="bottom" id="Y8z-1Y-s3w"/>
                         </constraints>
                     </view>
                     <connections>
@@ -116,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNV-pK-2g7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298.5507246376815" y="-183.42391304347828"/>
+            <point key="canvasLocation" x="2239.130434782609" y="-198.09782608695653"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cn0-jq-DPd">
@@ -132,7 +121,59 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMK-t0-DlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="-183"/>
+            <point key="canvasLocation" x="332" y="-197"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="KvQ-Zd-V2d">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewController" id="kX3-Cb-LKY" customClass="LoadingViewController" customModule="JodelChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X9n-ad-0ZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="R6A-rH-bsH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nbf-2s-ut0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-BY-sbM">
+                                <rect key="frame" x="191" y="351" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-Q7-kDq">
+                                <rect key="frame" x="20" y="695.66666666666663" width="373" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-6W-AX6" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="158.66666666666666" y="635.66666666666663" width="97" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="6cO-PR-DLX"/>
+                                    <constraint firstAttribute="height" constant="52" id="tcC-Zr-7eO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mk7-Q7-kDq" secondAttribute="bottom" constant="20" symbolic="YES" id="SBc-AC-Uwb"/>
+                            <constraint firstItem="Mk7-Q7-kDq" firstAttribute="centerX" secondItem="5gd-BY-sbM" secondAttribute="centerX" id="ec1-ev-nrj"/>
+                            <constraint firstItem="hzb-6W-AX6" firstAttribute="centerX" secondItem="Nbf-2s-ut0" secondAttribute="centerX" id="mlN-Oi-diT"/>
+                            <constraint firstItem="Mk7-Q7-kDq" firstAttribute="top" secondItem="hzb-6W-AX6" secondAttribute="bottom" constant="8" symbolic="YES" id="nOG-86-mDg"/>
+                            <constraint firstItem="Mk7-Q7-kDq" firstAttribute="leading" secondItem="Nbf-2s-ut0" secondAttribute="leadingMargin" id="ttT-e9-teD"/>
+                            <constraint firstItem="5gd-BY-sbM" firstAttribute="centerY" secondItem="Nbf-2s-ut0" secondAttribute="centerY" id="y8E-xC-Dzf"/>
+                            <constraint firstItem="5gd-BY-sbM" firstAttribute="centerX" secondItem="Nbf-2s-ut0" secondAttribute="centerX" id="z9u-1x-r9D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="hzb-6W-AX6" id="rHc-cb-oJ4"/>
+                        <outlet property="messageLabel" destination="Mk7-Q7-kDq" id="436-JV-gch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tu6-Fs-uZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="544"/>
         </scene>
     </scenes>
 </document>

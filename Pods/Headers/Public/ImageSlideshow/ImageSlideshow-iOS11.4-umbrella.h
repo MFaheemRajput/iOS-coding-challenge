@@ -1,0 +1,1 @@
+../../../Target Support Files/ImageSlideshow-iOS11.4/ImageSlideshow-iOS11.4-umbrella.h
