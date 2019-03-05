@@ -38,6 +38,11 @@ class FaiUnitTests: XCTestCase {
         }
     }
     
+    func testImageDownloading(){
+//        let photoVM =  PhotosViewModel()
+//        photoVM.loadPicture()
+    }
+    
     func  testIndicatorIsAnimating(){
         let photoVM =  PhotosViewModel()
         photoVM.startAnimation()
@@ -49,7 +54,7 @@ class FaiUnitTests: XCTestCase {
     }
     func  testIndicatorIsNotAnimating(){
         let photoVM =  PhotosViewModel()
-        photoVM.startAnimation()
+        photoVM.stopAnimation()
         if let value = photoVM.indicatorView?.isAnimating{
             print("yahoo\(value)")
             XCTAssertEqual(value, false)

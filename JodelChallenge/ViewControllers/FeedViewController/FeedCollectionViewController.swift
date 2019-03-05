@@ -12,7 +12,7 @@ import NotificationBar
 
 private let reuseIdentifier = "CollectionCell"
 
-class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSource  ,EmptyDataSetDelegate {
+class FeedCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout,EmptyDataSetSource  ,EmptyDataSetDelegate {
     
     var photos: [PhotosViewModel]?
     var loadingVC: LoadingViewController? = nil
@@ -154,6 +154,15 @@ class FeedCollectionViewController: UICollectionViewController,EmptyDataSetSourc
         }
         cell?.setupWithPhoto(with: self.photos?[indexPath.row])
         return cell!
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let kWhateverHeightYouWant = 120
+        return CGSize(width: collectionView.bounds.size.width, height: CGFloat(kWhateverHeightYouWant))
     }
 
     // MARK: - Empty Dataset
